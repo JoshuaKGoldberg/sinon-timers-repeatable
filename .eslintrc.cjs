@@ -57,14 +57,6 @@ module.exports = {
 			rules: {
 				// These off-by-default rules work well for this repo and we like them on.
 				"deprecation/deprecation": "error",
-
-				// These more-strict-by-default rules don't work well for this repo and we like them less strict.
-				"@typescript-eslint/no-unnecessary-condition": [
-					"error",
-					{
-						allowConstantLoopConditions: true,
-					},
-				],
 			},
 		},
 		{
@@ -90,6 +82,7 @@ module.exports = {
 				"@typescript-eslint/no-unsafe-call": "off",
 			},
 		},
+
 		{
 			extends: ["plugin:yml/standard", "plugin:yml/prettier"],
 			files: ["**/*.{yml,yaml}"],
@@ -124,6 +117,7 @@ module.exports = {
 		"regexp",
 		"vitest",
 	],
+	reportUnusedDisableDirectives: true,
 	root: true,
 	rules: {
 		// These off/less-strict-by-default rules work well for this repo and we like them on.
