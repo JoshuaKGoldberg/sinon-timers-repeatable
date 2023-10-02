@@ -72,7 +72,7 @@
 		"release-it": "^16.2.1",
 		"sentences-per-line": "^0.2.1",
 		"should-semantic-release": "^0.2.1",
-		"sinon": "^15.2.0",
+		"sinon": "^16.0.0",
 		"tsup": "^7.2.0",
 		"typescript": "^5.2.2",
 		"vitest": "^0.34.6",
