@@ -1,4 +1,4 @@
-<h1 align="center">sinon-timers-repeatable</h1>
+<h1 align="center">Sinon Timers Repeatable</h1>
 
 <p align="center">A version of Sinon's `useFakeTimers` that you can call multiple times in a test. ⏱️</p>
 
@@ -24,6 +24,7 @@
 	</a>
 	<img alt="Style: Prettier" src="https://img.shields.io/badge/style-prettier-21bb42.svg" />
 	<img alt="TypeScript: Strict" src="https://img.shields.io/badge/typescript-strict-21bb42.svg" />
+	<img alt="npm package version" src="https://img.shields.io/npm/v/sinon-timers-repeatable?color=21bb42" />
 </p>
 
 `sinon.useFakeTimers()` is a wonderful API, but crashes if you call it twice in the same test:
