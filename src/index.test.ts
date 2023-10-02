@@ -10,6 +10,6 @@ describe("useFakeTimers", () => {
 	});
 
 	it("does not throw an error when called in another test", () => {
-		useFakeTimers();
+		expect(() => useFakeTimers()).not.toThrow();
 	});
 });

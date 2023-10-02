@@ -10,7 +10,7 @@ module.exports = {
 		"plugin:n/recommended",
 		"plugin:perfectionist/recommended-natural",
 		"plugin:regexp/recommended",
-		"prettier",
+		"plugin:vitest/recommended",
 	],
 	overrides: [
 		{
@@ -44,6 +44,15 @@ module.exports = {
 			},
 		},
 		{
+			files: "**/*.md/*.ts",
+			rules: {
+				"n/no-missing-import": [
+					"error",
+					{ allowModules: ["sinon-timers-repeatable"] },
+				],
+			},
+		},
+		{
 			excludedFiles: ["**/*.md/*.ts"],
 			extends: [
 				"plugin:@typescript-eslint/strict-type-checked",
@@ -57,14 +66,6 @@ module.exports = {
 			rules: {
 				// These off-by-default rules work well for this repo and we like them on.
 				"deprecation/deprecation": "error",
-
-				// These more-strict-by-default rules don't work well for this repo and we like them less strict.
-				"@typescript-eslint/no-unnecessary-condition": [
-					"error",
-					{
-						allowConstantLoopConditions: true,
-					},
-				],
 			},
 		},
 		{
@@ -117,25 +118,24 @@ module.exports = {
 	plugins: [
 		"@typescript-eslint",
 		"deprecation",
-		"import",
 		"jsdoc",
 		"no-only-tests",
 		"perfectionist",
 		"regexp",
 		"vitest",
 	],
+	reportUnusedDisableDirectives: true,
 	root: true,
 	rules: {
 		// These off/less-strict-by-default rules work well for this repo and we like them on.
 		"@typescript-eslint/no-unused-vars": ["error", { caughtErrors: "all" }],
-		"import/extensions": ["error", "ignorePackages"],
 		"no-only-tests/no-only-tests": "error",
 
 		// These on-by-default rules don't work well for this repo and we like them off.
-		"n/no-missing-import": "off",
 		"no-case-declarations": "off",
 		"no-constant-condition": "off",
 		"no-inner-declarations": "off",
+		"no-mixed-spaces-and-tabs": "off",
 
 		// Stylistic concerns that don't interfere with Prettier
 		"@typescript-eslint/padding-line-between-statements": [
