@@ -41,7 +41,7 @@
 		"@types/eslint": "^8.44.3",
 		"@types/node": "^20.5.1",
 		"@types/sinon": "^17.0.0",
-		"@typescript-eslint/eslint-plugin": "^6.7.3",
+		"@typescript-eslint/eslint-plugin": "^7.0.0",
 		"@typescript-eslint/parser": "^6.7.3",
 		"@vitest/coverage-v8": "^1.0.0",
 		"console-fail-test": "^0.2.3",
