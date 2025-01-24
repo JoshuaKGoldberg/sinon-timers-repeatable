@@ -78,8 +78,8 @@ importers:
         specifier: ^2.3.0
         version: 2.4.0
       knip:
-        specifier: 5.42.2
-        version: 5.42.2(@types/node@22.10.7)(typescript@5.7.3)
+        specifier: 5.42.3
+        version: 5.42.3(@types/node@22.10.7)(typescript@5.7.3)
       lint-staged:
         specifier: ^15.0.0
         version: 15.4.1
@@ -2526,8 +2526,8 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  knip@5.42.2:
-    resolution: {integrity: sha512-hVtZ6V59COFz3Y0/BHrWMlPAx82EdX/xFHXbutIRSNfJFPMGmIpxLBWTg35F4XQJGwlu5uWiJf8rBYYkmlYWWQ==}
+  knip@5.42.3:
+    resolution: {integrity: sha512-Bytayxld9Ksd7ObL4zNwRjSq11n+NtsN3SemTfEbqW8WEQnfeW4i0wx6QtY+WeVdmWeWNJGNjrmsC87FdaEAHw==}
     engines: {node: '>=18.18.0'}
     hasBin: true
     peerDependencies:
@@ -2589,6 +2589,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -6283,7 +6284,7 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  knip@5.42.2(@types/node@22.10.7)(typescript@5.7.3):
+  knip@5.42.3(@types/node@22.10.7)(typescript@5.7.3):
     dependencies:
       '@nodelib/fs.walk': 3.0.1
       '@snyk/github-codeowners': 1.1.0
