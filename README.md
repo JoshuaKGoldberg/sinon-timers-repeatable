@@ -24,7 +24,7 @@
 TypeError: Can't install fake timers twice on the same global object.
     at Object.install (.../node_modules/sinon/pkg/sinon.js:6783:19)
     at createClock (.../node_modules/sinon/pkg/sinon.js:4676:31)
-...
+    ...
 ```
 
 That can be inconvenient if you want to `useFakeTimers()` inside setup functions.
