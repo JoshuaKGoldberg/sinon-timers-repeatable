@@ -28,6 +28,7 @@ TypeError: Can't install fake timers twice on the same global object.
 ```
 
 That can be inconvenient if you want to `useFakeTimers()` inside setup functions.
+
 This package provides a `useFakeTimers` that:
 
 - Lazily creates a `clock = sinon.useFakeTimers()` on-demand
