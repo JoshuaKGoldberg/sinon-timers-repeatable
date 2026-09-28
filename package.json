@@ -1,6 +1,6 @@
 {
 	"name": "sinon-timers-repeatable",
-	"version": "0.0.0",
+	"version": "0.0.2",
 	"description": "A version of Sinon's `useFakeTimers` that you can call multiple times in a test. ⏱️",
 	"repository": {
 		"type": "git",
